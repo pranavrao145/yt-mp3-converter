@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 flask = "*"
 flaskwebgui = "*"
+requests = "*"
+python-dotenv = "*"
 
 [dev-packages]
 
