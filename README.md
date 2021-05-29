@@ -9,8 +9,10 @@ This application requires:
 ## Build
 To build this on Windows (pyinstaller):
 * Clone the repository
+* Create a .env file with a 16-character SECRET_KEY variable and a YOUTUBE_API_TOKEN variable containing a Youtube Data API Key.
 * Run `pyinstaller -w -F --add-data "application;application" run.py -n "Youtube to MP3 Converter"`
 
 To build this on MacOS/Linux (pyinstaller)
 * Clone the repository
+* Create a .env file with a 16-character SECRET_KEY variable and a YOUTUBE_API_TOKEN variable containing a Youtube Data API Key.
 * Run `pyinstaller -w -F --add-data "application:application" run.py -n "Youtube to MP3 Converter"`
