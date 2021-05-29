@@ -13,6 +13,7 @@ wtforms = "*"
 neovim = "*"
 youtube-dl = "*"
 pyinstaller = "*"
+pywin32-ctypes = "*"
 
 [dev-packages]
 
