@@ -17,7 +17,7 @@ def home():
 def download(link):
     ydl_opts = {
             'format': 'bestaudio/best',
-            'outtmpl': '%(title)s.%(ext)s',
+            'outtmpl': '~/Downloads/%(title)s.%(ext)s',
             'postprocessors': [{
                 'key': 'FFmpegExtractAudio',
                 'preferredcodec': 'mp3',
@@ -27,5 +27,5 @@ def download(link):
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
         ydl.download([f"{link}"])
     flash("Video downloaded successfully. Check your downloads folder.", "success")
-    return redirect('/')
+    return ('', 204)
 
