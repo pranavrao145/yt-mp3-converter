@@ -10,6 +10,8 @@ requests = "*"
 python-dotenv = "*"
 flask-wtf = "*"
 wtforms = "*"
+neovim = "*"
+youtube-dl = "*"
 
 [dev-packages]
 

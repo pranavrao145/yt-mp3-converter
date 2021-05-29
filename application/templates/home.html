@@ -5,7 +5,7 @@
 <div class="content-section text-center">
     <h1>Youtube to MP3 Converter</h1>
     <p>Search for a video to convert below:</p>
-    <form action="" method="POST">
+    <form action="" method="POST" class="mb-3">
         {{ form.hidden_tag() }}
         <div class="form-group">
             {% if form.query.errors %}
@@ -25,13 +25,32 @@
         </div>
     </form>
 
-    {% comment %}{% if items %}{% endcomment %}
-    {% comment %}{% for item in items %}{% endcomment %}
-    {% comment %}{% for key, value in item.items() %}{% endcomment %}
-    {% comment %}{% endfor %}{% endcomment %}
-    {% comment %}{% endfor %}{% endcomment %}
-    {% comment %}{% else %}{% endcomment %}
-    {% comment %}{% endif %}{% endcomment %}
+    {% if items %}
+    {% for item in items %}
+    <div class="card mb-3">
+        <div class="row no-gutters">
+            <div class="col-md-3">
+                <img src="{{ item["snippet"]["thumbnails"]["high"]["url"] }}" class="card-img">
+            </div>
+            <div class="col-md-9">
+                <div class="card-body text-left">
+                    <div class="row">
+                        <div class="col-10">
+                            <h5 class="card-title">{{ item["snippet"]["title"] }}</h5>
+                        </div>
+                        <div class="col-2">
+                            <a href="{{ url_for('download', link=item["id"]["videoId"] ) }}" class="btn btn-primary">Download</a>
+                        </div>
+                    </div>
+                    <p class="card-text">{{ item["snippet"]["channelTitle"] }}</p>
+                    <p class="card-text">{{ item["snippet"]["description"] }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    {% else %}
+    {% endif %}
 </div>
 
 {% endblock content %}
