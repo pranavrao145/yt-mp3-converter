@@ -26,6 +26,6 @@ def download(link):
             }
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
         ydl.download([f"{link}"])
-    flash("Video downloaded successfully. Check your Downloads folder.", "success")
+    flash("Video downloaded successfully. Check your downloads folder.", "success")
     return redirect('/')
 
