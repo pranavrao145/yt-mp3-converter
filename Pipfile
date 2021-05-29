@@ -12,6 +12,7 @@ flask-wtf = "*"
 wtforms = "*"
 neovim = "*"
 youtube-dl = "*"
+pyinstaller = "*"
 
 [dev-packages]
 

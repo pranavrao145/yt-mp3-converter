@@ -6,7 +6,7 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
-ui = FlaskUI(app, start_server="flask")
+ui = FlaskUI(app, start_server="flask", maximized=True)
 
 app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 
