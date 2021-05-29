@@ -12,7 +12,6 @@ flask-wtf = "*"
 wtforms = "*"
 neovim = "*"
 youtube-dl = "*"
-ffmpeg = "*"
 
 [dev-packages]
 
