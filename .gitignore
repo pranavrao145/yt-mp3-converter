@@ -1,6 +1,6 @@
 .env
 application/__pycache__/
-app.spec
+Youtube to MP3 Converter.spec
 build/
 dist/
 run.spec
