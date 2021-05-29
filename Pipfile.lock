@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "c8c6cee38c2dd23887d09b69848f066f82eb11f6dc4b121f1ff539e599d360d8"
+            "sha256": "ffa58a0dd4cfafe405d621b26711a0235af0b148445373d6064f60165383f730"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -46,6 +46,14 @@
             ],
             "index": "pypi",
             "version": "==2.0.1"
+        },
+        "flask-wtf": {
+            "hashes": [
+                "sha256:6ff7af73458f182180906a37a783e290bdc8a3817fe4ad17227563137ca285bf",
+                "sha256:ff177185f891302dc253437fe63081e7a46a4e99aca61dfe086fb23e54fff2dc"
+            ],
+            "index": "pypi",
+            "version": "==0.15.1"
         },
         "flaskwebgui": {
             "hashes": [
@@ -199,6 +207,14 @@
                 "sha256:deda9266fbb22b8c64fd3ee45c050d61139cd87419765f588e37c8d23e236dd9"
             ],
             "version": "==0.6.1"
+        },
+        "wtforms": {
+            "hashes": [
+                "sha256:7b504fc724d0d1d4d5d5c114e778ec88c37ea53144683e084215eed5155ada4c",
+                "sha256:81195de0ac94fbc8368abbaf9197b88c4f3ffd6c2719b5bf5fc9da744f3d829c"
+            ],
+            "index": "pypi",
+            "version": "==2.3.3"
         }
     },
     "develop": {}

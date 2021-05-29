@@ -8,6 +8,8 @@ flask = "*"
 flaskwebgui = "*"
 requests = "*"
 python-dotenv = "*"
+flask-wtf = "*"
+wtforms = "*"
 
 [dev-packages]
 
