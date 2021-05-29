@@ -17,7 +17,7 @@ def home():
 def download(link):
     ydl_opts = {
             'format': 'bestaudio/best',
-            'outtmpl': '~/Downloads/%(title)s.%(ext)s',
+            'outtmpl': '%(title)s.%(ext)s',
             'postprocessors': [{
                 'key': 'FFmpegExtractAudio',
                 'preferredcodec': 'mp3',
