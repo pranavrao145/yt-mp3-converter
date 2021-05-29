@@ -1,2 +1,7 @@
 .env
 application/__pycache__/
+app.spec
+build/
+dist/
+run.spec
+
