@@ -3,3 +3,11 @@ Application to make converting youtube to mp3 easier. Search and download mp3 fo
 
 ## Dependencies
 This application requires FFmpeg to function. To use this application, install it on your system, and ensure it is added to PATH.
+
+To build this on Windows (pyinstaller):
+* Clone the repository
+* Run `pyinstaller -w -F --add-data "application;application" run.py -n "Youtube to MP3 Converter"`
+
+To build this on MacOS/Linux (pyinstaller)
+* Clone the repository
+* Run `pyinstaller -w -F --add-data "application:application" run.py -n "Youtube to MP3 Converter"`
