@@ -23,3 +23,6 @@ This application requires:
 * Run `pipenv shell` (or source whatever venv you are using)
 * Run `pipenv install` (alternatively you can use `pip3 install -r requirements.txt`, but pipenv is recommended)
 * Run `pyinstaller -w -F --add-data "application:application" run.py -n "Youtube to MP3 Converter"`
+
+## Run
+* If you build using the instructiosn above, the executable will be under `{Project Root}\dist\'
