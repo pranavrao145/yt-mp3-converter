@@ -25,4 +25,6 @@ This application requires:
 * Run `pyinstaller -w -F --add-data "application:application" run.py -n "Youtube to MP3 Converter"`
 
 ## Run
-* If you build using the instructiosn above, the executable will be under `{Project Root}\dist\'
+* If you build using the instructiosn above, the executable will be under `{Project Root}\dist\'`
+  * For Windows: Clicking on the .exe should open it
+  * For MacOS/Linux: Clicking may work, but recommended to run it from the terminal (`./Youtube\ to\ MP3\ Converter`)
