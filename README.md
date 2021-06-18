@@ -1,5 +1,5 @@
 # Youtube to MP3 Converter
-Application to make converting youtube to mp3 easier. Search and download mp3 for videos, all in one place.
+Application to make converting youtube to mp3 easier. Search and download mp3 for videos, all in one place. Made with `flask` and `flaskwebgui`.
 
 ## Disclaimer
 Downloading the mp3 for videos that you do not have persmission to download (which is most of them) is **a direct violation of Youtube's Terms and Condition, sometimes illegal**. Do **NOT** use this application for doing this. I am **not responsible** for your actions if you decide to use this application. This application was intended to make downloading content which the owner of the video has *specifically said* you can download (such as royalty free music) easier to download. I expect end users to use it for the same, thereby adhering to YouTube's policies.
