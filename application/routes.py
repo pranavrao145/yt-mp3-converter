@@ -1,5 +1,5 @@
 from application import app
-from flask import render_template, redirect, flash
+from flask import render_template
 from application import utils
 from application.forms import SearchForm
 import youtube_dl
