@@ -4,6 +4,7 @@ from application import utils
 from application.forms import SearchForm
 import youtube_dl
 
+
 @app.route('/', methods=["GET", "POST"])
 def home():
     form = SearchForm()
@@ -13,18 +14,18 @@ def home():
         return render_template("home.html", title="Home", items=response, form=form)
     return render_template("home.html", title="Home", form=form)
 
+
 @app.route('/download/<link>')
 def download(link):
     ydl_opts = {
-            'format': 'bestaudio/best',
-            'outtmpl': '~/Downloads/Youtube To MP3 Converter Output/%(title)s.%(ext)s',
-            'postprocessors': [{
-                'key': 'FFmpegExtractAudio',
-                'preferredcodec': 'mp3',
-                'preferredquality': '192',
-                }],
-            }
+        'format': 'bestaudio/best',
+        'outtmpl': '~/Downloads/Youtube To MP3 Converter Output/%(title)s.%(ext)s',
+        'postprocessors': [{
+            'key': 'FFmpegExtractAudio',
+            'preferredcodec': 'mp3',
+            'preferredquality': '192',
+        }],
+    }
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
         ydl.download([f"{link}"])
     return ('', 204)
-
