@@ -19,7 +19,7 @@ def home():
 def download(link):
     ydl_opts = {
         'format': 'bestaudio/best',
-        'outtmpl': '~/Downloads/Youtube To MP3 Converter Output/%(title)s.%(ext)s',
+        'outtmpl': '~/Downloads/yt-mp3-output/%(title)s.%(ext)s',
         'postprocessors': [{
             'key': 'FFmpegExtractAudio',
             'preferredcodec': 'mp3',

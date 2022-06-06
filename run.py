@@ -1,5 +1,4 @@
-from application import app, ui
+from application import app
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0")
-    # ui.run()
+    app.run(debug=True, host="0.0.0.0", port=6969)

@@ -5,3 +5,4 @@ services:
     command: python run.py
     volumes:
       - .:/app
+      - ~/Downloads/yt-mp3-output:/root/Downloads/yt-mp3-output

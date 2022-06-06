@@ -13,7 +13,6 @@ youtube-dl = "*"
 pyinstaller = "*"
 pywin32-ctypes = "*"
 gunicorn = "*"
-flaskwebgui = "*"
 neovim = "*"
 pynvim = "*"
 
