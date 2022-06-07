@@ -61,23 +61,25 @@ docker-compose up
 
 ## Using the App
 
-Navigate to `localhost:6969` in your browser to use the app. To download a
-video, search for the video in the search bar and hit `Download`. There is no
-confirmation message, so you can just hit `Download` and move on to the next
-video, doing multiple at a time. You can view progress in the terminal you ran
-the app from. Any video is FINISHED downloading if you see a message in the
-terminal like: `Deleting original file: <video-name>...`. If you download
+Navigate to the url **shown on the terminal** in your browser to use the app.
+The line will start with the words `Running on...` and the url will look
+something like `http://172.17.0.2:6969`, though it may not be exactly that. To
+download a video, search for the video in the search bar and hit `Download`.
+There is no confirmation message, so you can just hit `Download` and move on to
+the next video, doing multiple at a time. You can view progress in the terminal
+you ran the app from. Any video is FINISHED downloading if you see a message in
+the terminal like: `Deleting original file: <video-name>...`. If you download
 multiple things at once, you should see this message for the LAST video you
 downloaded, at which point you can safely assume all videos have been
 downloaded successfully.
 
 If you ever run into a `Forbidden` error, simply reload the page and
-re-download the song that caused the error.
+re-download the video that caused the error.
 
 Any and all downloads will go to your `Downloads/yt-mp3-output` folder in the
 home directory.
 
-When done downloading songs, use `Control/Command+C` to exit the server in the
+When done downloading videos, use `Control/Command+C` to exit the server in the
 terminal.
 
 ## Updating
