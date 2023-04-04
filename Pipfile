@@ -9,12 +9,12 @@ requests = "*"
 python-dotenv = "*"
 flask-wtf = "*"
 wtforms = "*"
-youtube-dl = "*"
 pyinstaller = "*"
 pywin32-ctypes = "*"
 gunicorn = "*"
 neovim = "*"
 pynvim = "*"
+yt-dlp = "*"
 
 [dev-packages]
 pylint = "*"

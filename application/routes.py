@@ -2,7 +2,7 @@ from application import app
 from flask import render_template
 from application import utils
 from application.forms import SearchForm
-import youtube_dl
+import yt_dlp 
 
 
 @app.route('/', methods=["GET", "POST"])
@@ -26,6 +26,6 @@ def download(link):
             'preferredquality': '192',
         }],
     }
-    with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.download([f"{link}"])
     return ('', 204)
